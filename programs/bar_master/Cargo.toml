@@ -1,0 +1,20 @@
+[package]
+name = "bar_master"
+version = "0.1.0"
+description = "1. Can the program sign for the account? Yes, Pda derived from the program's id, and whose owner is a different program. 2. Can the program modify the account? No, Pda derived from the program's id, and whose owner is a different program"
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "bar_master"
+
+[features]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+cpi = ["no-entrypoint"]
+default = []
+
+[dependencies]
+anchor-lang = "0.23.0"
+bar = {path="../bar", features=['cpi']}

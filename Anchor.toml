@@ -1,0 +1,19 @@
+[features]
+seeds = false
+[programs.localnet]
+foo_master = "Ffh6UfPxPSkaPH25Md76uzqSvUXBJCW3tTJLBLEX52tS"
+bar_master = "C9gADctaRKygcKSoH6TYuegVewTiF224BrmetWYhDZrj"
+foo = "39dR8Kz9feCALZPKLVFQaozDtRu5QZJBoL7JhwSdqKbk"
+bar = "54XffRfKduCPwnq5zRpQJBk5BsLo5kBaqZAV2CMvtjKV"
+
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "localnet"
+wallet = "/Users/urveshghoderao/.config/solana/localnet.json"
+
+[scripts]
+foo_master = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/foo_master/foo_master.ts"
+bar_master = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/bar_master/bar_master.ts"

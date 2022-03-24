@@ -1,0 +1,20 @@
+[package]
+name = "foo_master"
+version = "0.1.0"
+description = "Can the program modify and sign for the account? Yes, Pda derived from the program's id, and whose owner is the program."
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "foo_master"
+
+[features]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+cpi = ["no-entrypoint"]
+default = []
+
+[dependencies]
+anchor-lang = "0.23.0"
+foo = {path="../foo", features=["cpi"]}
