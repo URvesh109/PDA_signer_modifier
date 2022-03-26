@@ -19,8 +19,8 @@ describe("1. Can the program sign for the account? Yes, Pda derived from the pro
 
   anchor.setProvider(provider);
 
-  const bar_program = anchor.workspace.Probability as Program<Bar>;
-  const bar_master_program = anchor.workspace.ProbMaster as Program<BarMaster>;
+  const bar_program = anchor.workspace.Bar as Program<Bar>;
+  const bar_master_program = anchor.workspace.BarMaster as Program<BarMaster>;
 
   it("Is initialized!", async () => {
     const [userPDA, useBump] = await PublicKey.findProgramAddress(
