@@ -5,6 +5,8 @@ foo_master = "Ffh6UfPxPSkaPH25Md76uzqSvUXBJCW3tTJLBLEX52tS"
 bar_master = "C9gADctaRKygcKSoH6TYuegVewTiF224BrmetWYhDZrj"
 foo = "39dR8Kz9feCALZPKLVFQaozDtRu5QZJBoL7JhwSdqKbk"
 bar = "54XffRfKduCPwnq5zRpQJBk5BsLo5kBaqZAV2CMvtjKV"
+increment = "cdiBmZiebfEhTpsdNj3ps7djt8m7kra6pGCf3w21MNo"
+increment_master = "HfzxysBgzWNFrV8Rtef572fSwsRZWXSssp3QmBEN9WwE"
 
 
 [registry]
